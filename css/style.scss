@@ -76,3 +76,42 @@ main{
 .active{
     color: #e08958;
 }
+
+footer{
+    a{
+        padding: 1rem;
+    }
+}
+
+// RWD製作
+@media screen and (max-width: 1100px){
+    .orange{
+        opacity: 0.5;
+    }
+    header{
+        nav{
+           ul{
+               width: 100%;
+               flex-direction: column;
+               li{
+                   padding: 1rem 0;
+                   border-bottom: 2px solid gray;
+               }
+           } 
+        }
+    }
+    main{
+        section.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                position: static;
+                transform: none;
+                width: 50vw;
+                height: 50vw;
+
+            }
+        }
+    }
+}
